@@ -14,15 +14,15 @@ Simple PHP wrapper class for work with Txtoken API.
 $ mkdir project
 $ cd project
 ```
-3. Execute composer require "txtoken/txtoken-php-client:*" on command line. Replace composer with composer.phar if required. It should show something like this:
+3. Execute composer require "teslasw/txtoken-php-client:*" on command line. Replace composer with composer.phar if required. It should show something like this:
 ```sh
-$ composer require txtoken/txtoken-php-client:*
+$ composer require teslasw/txtoken-php-client:*
 
 # output:
 ./composer.json has been created
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
-- Installing txtoken/txtoken-php-client (v0.1)
+- Installing teslasw/txtoken-php-client (v0.1)
 Loading from cache
 
 Writing lock file

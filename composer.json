@@ -1,8 +1,9 @@
 {
-    "name": "txtoken-api/txtoken-php-client",
+    "name": "teslasw/txtoken-php-client",
     "description": "Txtoken's PHP SDK for REST APIs",
     "type": "library",
-    "license": "Apache2",
+    "homepage": "https://github.com/teslasw/txtoken-php-client",
+    "license": "MIT",
     "authors": [
         {
             "name": "Oom Thongkul",
@@ -26,5 +27,9 @@
         "psr-4": {
             "Txtoken\\Tests\\": "tests/"
         }
-    }
+    },
+    "repositories": [{
+         "type": "vcs",
+         "url": "https://github.com/teslasw/txtoken-php-client" 
+    }]
 }
