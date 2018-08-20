@@ -104,6 +104,8 @@ $res = $eth->getCustomBalance(array('contractAddress'=>'0xA25c3545A9858Ef57e75Fc
 
 
 // ========== Vault ==========
+$vault = new TxtokenVault($client);
+
 // Create new Vault
 $data = ['ownerId'=>'3', 'passPhrase'=>'dog_cat_rat', 'type'=>'bank', 'expiry'=>'2019-05-28', 'data'=>'{"bankAccount":"5682365248", "bankName":"K-Bank", "address":"12/2 Sukumvit 69"}'];
 $res = $vault->createVault($data);
