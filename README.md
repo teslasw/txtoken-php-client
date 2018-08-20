@@ -22,7 +22,7 @@ $ composer require teslasw/txtoken-php-client:*
 ./composer.json has been created
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
-- Installing teslasw/txtoken-php-client (v0.1)
+- Installing teslasw/txtoken-php-client (0.1): Downloading (100%) 
 Loading from cache
 
 Writing lock file
@@ -50,7 +50,7 @@ $client = new TxtokenApiClient($apiId, $apiSecret, $apiMode);
 // After Step 2
 $eth = new TxtokenEth($client); 
 
-
+// ========== ETH ==========
 // Create Account
 $data = array('ownerId'=>'xxxxx', 'passPhrase'=>'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 $res = $eth->createAccount($data);
@@ -102,6 +102,18 @@ $res = $eth->getBalance(array('address'=>'0xa79BbE0e5f01388DF28a15Ac930Fa6148120
 // Get Custom Balance
 $res = $eth->getCustomBalance(array('contractAddress'=>'0xA25c3545A9858Ef57e75Fc9def3d506f469c7Bbf', 'address'=>'0xa79BbE0e5f01388DF28a15Ac930Fa61481206bf5'));
 
+
+// ========== Vault ==========
+// Create new Vault
+$data = ['ownerId'=>'3', 'passPhrase'=>'dog_cat_rat', 'type'=>'bank', 'expiry'=>'2019-05-28', 'data'=>'{"bankAccount":"5682365248", "bankName":"K-Bank", "address":"12/2 Sukumvit 69"}'];
+$res = $vault->createVault($data);
+
+
+// Get vault
+$data = ['vaultId'=>'5b7a369657669f1b7596dabc', 'passPhrase'=>'dog_cat_rat'];
+$res = $vault->getVault($data);
+    
+    
 ```
 
 3. All together

@@ -32,7 +32,7 @@ class TxtokenEth
             throw new TxtokenException('Missing or invalid ownerId!');
         }
 
-        if (  strlen($data['passPhrase']) < 32 ) {
+        if ( strlen($data['passPhrase']) < 32 ) {
             throw new TxtokenException('Missing or invalid passPhrase!');
         }
 
